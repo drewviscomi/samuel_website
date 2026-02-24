@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Samuel Viscomi</title>
+  <meta name="description" content="Custom furniture, sculptural woodwork, and fine joinery by Samuel Viscomi.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Samuel Viscomi</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gallery Header -->
+  <header class="page-header">
+    <p class="section-label">Gallery</p>
+    <h1>From the shop.</h1>
+    <p class="page-header-sub">Custom furniture, sculptural pieces, and fine joinery, all handcrafted in Chattanooga, TN.</p>
+  </header>
+
+  <!-- Filter -->
+  <div class="gallery-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="furniture">Furniture</button>
+    <button class="filter-btn" data-filter="sculpture">Sculpture</button>
+    <button class="filter-btn" data-filter="detail">Joinery & Detail</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <section class="section gallery-section">
+    <div class="gallery-grid">
+
+      <div class="gallery-item" data-category="furniture">
+        <!-- Replace with: <img src="images/gallery-1.jpg" alt="Live edge dining table"> -->
+        <span>[ Dining Table ]</span>
+        <div class="gallery-caption">
+          <h3>Live Edge Dining Table</h3>
+          <p>White oak — custom commission</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="sculpture">
+        <!-- Replace with: <img src="images/gallery-2.jpg" alt="Sculpted wave dresser"> -->
+        <span>[ Sculpted Dresser ]</span>
+        <div class="gallery-caption">
+          <h3>Wave Dresser</h3>
+          <p>Walnut — sculptural furniture</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="detail">
+        <!-- Replace with: <img src="images/gallery-3.jpg" alt="Dovetail joinery close-up"> -->
+        <span>[ Joinery Detail ]</span>
+        <div class="gallery-caption">
+          <h3>Hand-Cut Dovetails</h3>
+          <p>Traditional joinery</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="furniture">
+        <!-- Replace with: <img src="images/gallery-4.jpg" alt="Curved leg table"> -->
+        <span>[ Curved Leg Table ]</span>
+        <div class="gallery-caption">
+          <h3>Curved Leg Table</h3>
+          <p>White oak — organic form</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="furniture">
+        <!-- Replace with: <img src="images/gallery-5.jpg" alt="Round dining table"> -->
+        <span>[ Round Table ]</span>
+        <div class="gallery-caption">
+          <h3>Round Dining Table</h3>
+          <p>Walnut — family commission</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="detail">
+        <!-- Replace with: <img src="images/gallery-6.jpg" alt="Timber frame detail"> -->
+        <span>[ Timber Frame ]</span>
+        <div class="gallery-caption">
+          <h3>Timber Frame Detail</h3>
+          <p>Structural joinery</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <h2>Like what you see?</h2>
+    <p>Every piece is custom. Let's talk about building something for you.</p>
+    <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p class="footer-name">Samuel Viscomi</p>
+        <p>Chattanooga, TN</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/samviscomi" target="_blank" rel="noopener">Instagram</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

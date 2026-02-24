@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Samuel Viscomi</title>
+  <meta name="description" content="Get in touch with Samuel Viscomi for custom furniture commissions and woodworking projects.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Samuel Viscomi</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta active">Get in Touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-layout">
+    <div class="contact-info">
+      <p class="section-label">Contact</p>
+      <h1>I'd love to<br>hear from you.</h1>
+      <p class="contact-desc">Whether you have a clear vision or just a feeling, that's a great place to start. Tell me a little about yourself and what you're looking for.</p>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <h3>Location</h3>
+          <p>Chattanooga, TN</p>
+        </div>
+        <div class="contact-detail">
+          <h3>Email</h3>
+          <p><a href="mailto:sam@samviscomi.com">sam@samviscomi.com</a></p>
+        </div>
+        <div class="contact-detail">
+          <h3>Instagram</h3>
+          <p><a href="https://www.instagram.com/samviscomi" target="_blank" rel="noopener">@samviscomi</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <!-- Replace YOUR_FORM_ID with your Formspree endpoint -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="form-optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="who">I am a(n)...</label>
+          <select id="who" name="who">
+            <option value="" disabled selected>Select one</option>
+            <option value="individual">Individual / Homeowner</option>
+            <option value="interior-designer">Interior Designer</option>
+            <option value="gallery">Gallery</option>
+            <option value="retail">Retail / Store</option>
+            <option value="architect">Architect</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">I'm interested in...</label>
+          <select id="interest" name="interest">
+            <option value="" disabled selected>Select one</option>
+            <option value="custom-furniture">Custom Furniture</option>
+            <option value="sculptural-piece">Sculptural / Art Piece</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="general">General Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell me about yourself and your vision</label>
+          <textarea id="message" name="message" rows="6" required placeholder="What drew you to my work? What are you envisioning? Share as much or as little as you'd like."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p class="footer-name">Samuel Viscomi</p>
+        <p>Chattanooga, TN</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/samviscomi" target="_blank" rel="noopener">Instagram</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

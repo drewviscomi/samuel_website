@@ -1,0 +1,14 @@
+{
+  "name": "Woodworking Site",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "esbenp.prettier-vscode",
+        "ecmel.vscode-html-css"
+      ]
+    }
+  },
+  "forwardPorts": [5500]
+}
