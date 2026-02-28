@@ -7,7 +7,7 @@
   <meta name="description" content="Custom furniture and woodworking by Samuel Viscomi. Handcrafted in Chattanooga, TN.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -31,10 +31,10 @@
     <div class="hero-content">
       <p class="hero-label">Chattanooga, TN</p>
       <h1>Furniture maker,<br>carpenter, sculptor.</h1>
-      <p class="hero-sub">Handcrafted furniture and woodwork, designed with intention, built to last generations.</p>
+      <p class="hero-sub">Handcrafted furniture and woodwork, designed with intention, built to last.</p>
       <div class="hero-actions">
         <a href="gallery.html" class="btn btn-primary">View My Work</a>
-        <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
+        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
       </div>
     </div>
   </header>
@@ -46,17 +46,29 @@
       <h2>Take a look around.</h2>
     </div>
     <div class="work-grid">
-      <div class="work-item work-item-tall">
-        <!-- Replace with: <img src="images/piece-1.jpg" alt="Custom dining table"> -->
-        <span>[ Dining Table Photo ]</span>
+      <div class="work-item">
+        <img src="images/IMG_4589.jpg" alt="Hanging dresser in boutique hotel">
+        <div class="work-overlay">
+          <span>Hanging Dresser</span>
+        </div>
       </div>
       <div class="work-item">
-        <!-- Replace with: <img src="images/piece-2.jpg" alt="Sculpted dresser"> -->
-        <span>[ Sculpted Dresser Photo ]</span>
+        <img src="images/IMG_4598.jpg" alt="Custom table">
+        <div class="work-overlay">
+          <span>Dining Table</span>
+        </div>
       </div>
       <div class="work-item">
-        <!-- Replace with: <img src="images/piece-3.jpg" alt="Joinery detail"> -->
-        <span>[ Joinery Detail Photo ]</span>
+        <img src="images/IMG_4592.jpg" alt="Abstract head sculpture">
+        <div class="work-overlay">
+          <span>Sculpture</span>
+        </div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_4597.jpg" alt="Arms and hands sculpture">
+        <div class="work-overlay">
+          <span>Hands</span>
+        </div>
       </div>
     </div>
     <div class="section-footer">
@@ -68,15 +80,14 @@
   <section id="about" class="section about">
     <div class="about-layout">
       <div class="about-image">
-        <!-- Replace with: <img src="images/sam-portrait.jpg" alt="Samuel Viscomi in his workshop"> -->
-        <span>[ Sam Portrait ]</span>
+        <img src="images/IMG_4588.jpg" alt="Samuel Viscomi carving in his workshop">
       </div>
       <div class="about-text">
         <p class="section-label">About</p>
         <h2>Built by hand.<br>Shaped by craft.</h2>
         <p>I'm Samuel Viscomi, a furniture maker, carpenter, and sculptor working out of Southeast Tennessee. Every piece I build starts with the material itself: the grain, the weight, the character of the wood.</p>
         <p>I specialize in custom furniture, sculptural woodwork, and fine joinery. Whether it's a dining table your family will gather around for decades or a one-of-a-kind sculptural piece, I approach every project with the same care and attention to detail.</p>
-        <a href="contact.html" class="link-arrow">Let's talk about your project →</a>
+        <a href="contact.html" class="link-arrow">Let's talk →</a>
       </div>
     </div>
   </section>
@@ -85,7 +96,7 @@
   <section class="section process">
     <div class="section-header">
       <p class="section-label">Process</p>
-      <h2>How it works.</h2>
+      <h2>From idea to finished piece.</h2>
     </div>
     <div class="process-grid">
       <div class="process-step">
@@ -106,7 +117,7 @@
       <div class="process-step">
         <span class="process-num">04</span>
         <h3>Delivery</h3>
-        <p>I personally deliver and install your finished piece, ready to be used and loved.</p>
+        <p>Your finished piece, delivered and placed in your space.</p>
       </div>
     </div>
   </section>
@@ -114,7 +125,6 @@
   <!-- CTA -->
   <section class="section cta">
     <h2>Have something in mind?</h2>
-    <p>I'd love to hear about your project. Reach out for a free consultation.</p>
     <a href="contact.html" class="btn btn-primary">Get in Touch</a>
   </section>
 
@@ -131,6 +141,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <img src="" alt="">
+  </div>
 
   <script src="js/main.js"></script>
 </body>

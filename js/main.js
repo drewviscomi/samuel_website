@@ -36,3 +36,45 @@ if (filterBtns.length > 0) {
     });
   });
 }
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+
+if (lightbox) {
+  const lbImg = lightbox.querySelector('img');
+  const lbClose = lightbox.querySelector('.lightbox-close');
+
+  // Click any work or gallery image to open
+  document.querySelectorAll('.work-item img, .gallery-item img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Close on X button
+  lbClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  // Close on background click
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+}
